@@ -62,12 +62,11 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: I navigated to line 10 in the toy controller and corrected the NameError by removing s from Toys and remaining with Toy 
 
 - Update the number of likes for a toy
 
-  - How I debugged:
-
+  - How I debugged: The error was due to not rendering the updated toy instance in line 16. I navigated to the update method and added a line which was performing the render action.
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: From the error, it was indicated that there was a routing error and no route matched the delete functionality. I therefore navigated to the route file and added the destroy method. 
